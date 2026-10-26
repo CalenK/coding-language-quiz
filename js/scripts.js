@@ -23,4 +23,4 @@ window.addEventListener("load", function() {
       document.getElementById("ruby").removeAttribute("class");
     }
   });
-})
+});
