@@ -24,4 +24,16 @@ window.addEventListener("load", function() {
       document.getElementById("ruby").removeAttribute("class");
     }
   });
+
+  form.addEventListener("submit", function() {
+    resetBtn.removeAttribute("class");
+  });
+
+  resetBtn.addEventListener("click", function() {
+    document.getElementsByName("oop").value = null;
+    document.getElementsByName("dynamic").value = null;
+    document.getElementsByName("execution").value = null;
+    document.getElementsByName("syntax").value = null;
+    document.getElementsByName("concurrency").value = null;
+  });
 })
