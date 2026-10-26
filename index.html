@@ -38,10 +38,20 @@
         <input type="radio" name="execution" id="interpreted" value="interpreted" required>
       </div>
       <div class="control-form col-md">
-        <p></p>
+        <p>Which style of syntax would you preferred the most?</p>
+        <label for="c-style">C-Style</label>
+        <input type="radio" name="syntax" id="c-style" value="c-style" required>
+        <label for="significant-whitespace">Significant Whitespace</label>
+        <input type="radio" name="syntax" id="significant-whitespace" value="significant-whitespace" required>
+        <label for="keyword-based">Keyword-Based</label>
+        <input type="radio" name="syntax" id="keyword-based" value="keyword-based" required>
       </div>
       <div class="control-form col-md">
-        <p></p>
+        <p>Which type of concurrency do you think you might preferred the most?</p>
+        <label for="event-loop">Event Loop</label>
+        <input type="radio" name="concurrency" id="event-loop" value="event-loop" required>
+        <label for="gll">GLL</label>
+        <input type="radio" name="concurrency" id="gll" value="gll" required>
       </div>
     </div>
     <button type="submit">Submit selected answers</button>
