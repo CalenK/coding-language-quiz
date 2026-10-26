@@ -10,30 +10,18 @@ window.addEventListener("load", function() {
   form.addEventListener("submit", function(event) {
     event.preventDefault();
     hiddenResults();
-    const oop = document.querySelector('input[name="oop"]:checked').Value;
+    const oop = document.querySelector('input[name="oop"]:checked').value;
     const dynamic = document.querySelector('input[name="dynamic"]:checked').value;
     const execution = document.querySelector('input[name="execution"]:checked').value;
     const syntax = document.querySelector('input[name="syntax"]:checked').value;
     const concurrency = document.querySelector('input[name="concurrency"]:checked').value;
 
-    if (oop === "prototype-based" && (dynamic === "weak") && (execution === "compiled") && (syntax === "c-style") && (concurrency === "event-loop")) {
+    if (oop === "prototype" && (dynamic === "weak") && (execution === "compiled") && (syntax === "c-style") && (concurrency === "event-loop")) {
       document.getElementById("java-script").removeAttribute("class");
-    } else if (oop === "class-based" && (dynamic === "strong") && (execution === "interpreted") && (syntax === "significant-whitespace") && (concurrency === "gll")) {
+    } else if (oop === "class" && (dynamic === "strong") && (execution === "interpreted") && (syntax === "significant-whitespace") && (concurrency === "gll")) {
       document.getElementById("python").removeAttribute("class");
-    } else if (oop ==="class-based" && (dynamic === "strong") && (execution === "interpreted") && (syntax === "keyword-based") && (concurrency === "gll")) {
+    } else if (oop ==="class" && (dynamic === "strong") && (execution === "interpreted") && (syntax === "keyword-based") && (concurrency === "gll")) {
       document.getElementById("ruby").removeAttribute("class");
     }
-  });
-
-  form.addEventListener("submit", function() {
-    resetBtn.removeAttribute("class");
-  });
-
-  resetBtn.addEventListener("click", function() {
-    document.getElementsByName("oop").value = null;
-    document.getElementsByName("dynamic").value = null;
-    document.getElementsByName("execution").value = null;
-    document.getElementsByName("syntax").value = null;
-    document.getElementsByName("concurrency").value = null;
   });
 })
