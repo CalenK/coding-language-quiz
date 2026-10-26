@@ -6,7 +6,6 @@ function hiddenResults() {
 
 window.addEventListener("load", function() {
   const form = document.querySelector("form");
-  let resetBtn = document.querySelector("button#reset");
   form.addEventListener("submit", function(event) {
     event.preventDefault();
     hiddenResults();
