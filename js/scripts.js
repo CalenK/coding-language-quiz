@@ -15,5 +15,13 @@ window.addEventListener("load", function() {
     const execution = document.querySelector('input[name="execution"]:checked').value;
     const syntax = document.querySelector('input[name="syntax"]:checked').value;
     const concurrency = document.querySelector('input[name="concurrency"]:checked').value;
-  })
+
+    if (oop === "prototype-based" && (dynamic === "weak") && (execution === "compiled") && (syntax === "c-style") && (concurrency === "event-loop")) {
+      document.getElementById("java-script").removeAttribute("class");
+    } else if (oop === "class-based" && (dynamic === "strong") && (execution === "interpreted") && (syntax === "significant-whitespace") && (concurrency === "gll")) {
+      document.getElementById("python").removeAttribute("class");
+    } else if (oop ==="class-based" && (dynamic === "strong") && (execution === "interpreted") && (syntax === "keyword-based") && (concurrency === "gll")) {
+      document.getElementById("ruby").removeAttribute("class");
+    }
+  });
 })
