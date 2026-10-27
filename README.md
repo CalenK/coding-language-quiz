@@ -22,6 +22,7 @@
 * Copy link.
 * Use git clone command.
 * Open in VSCode.
+* Run application using LiveServer.
 ---
 ## _Known Bugs/Errors_
 #### _No known bugs or errors._

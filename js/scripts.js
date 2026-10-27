@@ -21,6 +21,8 @@ window.addEventListener("load", function() {
       document.getElementById("python").removeAttribute("class");
     } else if (oop ==="class" && (dynamic === "strong") && (execution === "interpreted") && (syntax === "keyword-based") && (concurrency === "gll")) {
       document.getElementById("ruby").removeAttribute("class");
+    } else {
+      document.getElementById("java-script").removeAttribute("class");
     }
   });
 });
